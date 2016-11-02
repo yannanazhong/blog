@@ -1,0 +1,11 @@
+/*nav*/
+.nav-top{background-color: rgba(0,0,0,.25);padding: 0.5rem 0;box-shadow: none;border: 0 none;}
+.nav-top a{font-weight: bold;}
+.logo{padding: 0 1.5rem;}
+.logo h1{margin: 0;padding: 0;}
+.logo a{width: 40px;height: 40px;display: table-cell;background-size: 40px 40px; background-image: url(../img/logo.png);text-indent: -9999rem;border: 1px solid rgba(255,255,255,.7);box-shadow: 2px 2px 1px #333; 
+    }
+
+/*footer*/
+.copy-right{background-color: rgba(0,0,0,.25);color: #ccc;font-size: 1.2rem;height: 4rem;line-height: 4rem;}
+.copy-right span{margin:0 0.2rem;}

@@ -1,0 +1,33 @@
+body{
+    background: url(../img/bg.jpg) no-repeat center fixed;
+    margin-top: 60px;
+    position: relative;
+}
+a{color: #fff;}
+
+/*login bottom-side*/
+.bottom-side{width: 6rem;position: fixed;bottom: 1rem;right: 0;z-index: 999;}
+.side-list{display: block;width: 6rem;height: 3rem;line-height: 3rem;padding-left: 0.5rem;position: relative;right: -3.3rem;opacity: 0.5;cursor: pointer;}
+.side-list:hover,.side-list:focus{color: #FFF;text-decoration: none;}
+@media screen and (max-width: 768px){
+    .bottom-side{width: 5rem;}
+    .side-list{width: 5rem;}
+    }
+#login{background-color: rgb(45, 193, 0);}
+#issue{background-color:rgb(29, 161, 242);}
+#gotop{background-color:rgb(230, 22, 45);}
+
+/*jumbotron*/
+.wrapper{background-color: rgba(0,0,0,0.15);color: #FFF;}
+
+/*container*/
+.board{color: #FFF;border-radius: 10px;}
+.board .day{color: #03A9F4;font-weight: bold;text-align: right;display: block;}
+.list-group-item{background: rgba(255,255,255,.55);}
+.post{background-color: rgba(0,0,0,.5);color: #fff;margin-bottom: 1rem;}
+.post-caption{padding: 0.5rem 1rem;max-height: 32rem;overflow: hidden;}
+.post-footer{background-color: rgba(0,0,0,.65);font-size: 1.2rem;color: #ccc;padding: 1rem;}
+.post-footer a{color: #ccc;}
+.post-footer a:hover{text-decoration: none;}
+.post-footer a:nth-child(1):hover{color:#5cb85c;}
+.post-footer a:nth-child(2):hover{color: #cc2b2b;}

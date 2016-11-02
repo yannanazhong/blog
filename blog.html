@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>blog</title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+    <!-- nav -->
+    <nav class="nav-top navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand logo">
+                    <h1><a href="blog.html">Borning</a></h1>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav" role="navigation">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#board">Board</a></li>
+                    <li><a href="#contart">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- bottom-side-->
+    <div class="bottom-side">
+        <a type="button" class="side-list" id="login" data-toggle="modal" data-target="#loginin">
+            <i class="icon-user"></i>
+            Login
+            <span class="sr-only">login</span>
+        </a>
+        <a href="gledit.html" class="side-list" id="issue">
+            <i class="icon-pencil"></i>
+            Issue
+            <span class="sr-only">issue</span>
+            </a>
+        <a href="javascript:;" class="side-list" id="gotop" target="_self">
+            <i class="icon-double-angle-up"></i>
+            Top
+            <span class="sr-only">gotop</span>
+            </a>
+    </div>
+    <!--bottom-side loginin Modal -->
+    <div class="modal fade" id="loginin" tabindex="-1" role="dialog" aria-lablledby="login-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <button class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">close</span></button>
+                    <h4 class="modal-title">Login In</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="post">
+                        <div class="form-group">
+                            <label for="username">User:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-user"></i></span>
+                                <input type="text" class="form-control" id="username" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="icon-lock"></i></span>
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="btn-group">
+                                    <button type="submit" class="btn btn-success">Login in</button>
+                                    <button class="btn btn-warning" type="button">Register</button>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="checkbox">
+                                    <label for="">
+                                        <input type="checkbox">Remeber Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>             
+                    </form>
+                </div>
+                <div class="modal-footer bg-primary">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jumbotron -->
+    <div class="jumbotron wrapper">
+        <div class="container text-center">
+            <h1><span class="greet">Hello</span> World!</h1>
+            <p>I'm b..b..b..Borning! It's a borning websit!</p>
+            <p>How to paly it? Just Click Click Click Click Click Click..</p>
+            <p>
+                <span class="label label-success"><i class="icon icon-comments"></i></span>
+                <span class="label label-primary"><i class="icon icon-facebook"></i></span>
+                <span class="label label-info"><i class="icon icon-twitter"></i></span>
+            </p>
+        </div>
+    </div>
+    <!-- container -->
+    <div class="container">
+        <div class="row">
+            <!-- left - board -->
+            <a name="board"></a>
+            <div class="col-sm-4 hidden-xs">
+                <div class="form-group">
+                    <label for="message" class="sr-only">message</label>
+                    <div class="input-group">
+                        <input type="text" id="message" class="form-control" autocomplete="off" placeholder="I wish ..">
+                        <span class="input-group-btn"><a href="javascript:;" type="button" class="btn btn-warning list-btn"><i class="icon-hand-up"></i></a></span>
+                    </div>
+                </div>
+                <ul class="list-group board" id="cloudlabel">
+                   <li class="list-group-item alert">
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                        <div class="panel">
+                            <div class="panel-body">
+                                I wish world peace!
+                            </div>
+                            <div class="panel-footer">
+                                <span class="day">Oct.1 <i class="icon-cloud"></i></span>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="list-group-item alert">
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                        <div class="panel">
+                            <div class="panel-body">
+                                Eat more,Fun more,Do more
+                            </div>
+                            <div class="panel-footer">
+                                <span class="day">Oct.1 <i class="icon-cloud"></i></span>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="list-group-item alert">
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                        <div class="panel">
+                            <div class="panel-body">
+                                One dream One head
+                            </div>
+                            <div class="panel-footer">
+                                <span class="day">Oct.1 <i class="icon-cloud"></i></span>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="list-group-item alert">
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                        <div class="panel">
+                            <div class="panel-body">
+                                I wish world peace!
+                            </div>
+                            <div class="panel-footer">
+                                <span class="day">Oct.1 <i class="icon-cloud"></i></span>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="list-group-item alert">
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                        <div class="panel">
+                            <div class="panel-body">
+                                I wish world peace!
+                            </div>
+                            <div class="panel-footer">
+                                <span class="day">Oct.1 <i class="icon-cloud"></i></span>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="list-group-item alert">
+                        <button class="close" data-dismiss="alert">
+                            <span aria-hidden="true">&times;
+                            </span>
+                        </button>
+                        <div class="panel">
+                            <div class="panel-body">
+                                I wish world peace!
+                            </div>
+                            <div class="panel-footer">
+                                <span class="day">Oct.1 <i class="icon-cloud"></i></span>
+                            </div>
+                        </div>
+                   </li>
+                </ul>
+            </div>
+            <!-- right blog -->
+            <a name="blog"></a>
+            <div class="col-sm-8 col-xs-12">
+                <div class="row grid">
+                    <div class="col-sm-6 col-xs-12 grid-item">
+                        <div class="post">
+                            <img src="img/photo_1.jpg" alt="Glory" class="img-responsive">
+                            <div class="post-caption">
+                                <h4>Morning Glory</h4>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of autumn which I enjoy with my whole heart.</p>
+                            </div>
+                            <div class="post-footer">
+                                <i class="icon icon-picture"></i>
+                                <span class="date">Oct.1,2016</span>
+                                <span class="pull-right">
+                                    <a href="#">
+                                        <i class="icon icon-comment"></i>109
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon icon-heart"></i>389
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 带关闭效果 -->
+                    <div class="col-sm-6 col-xs-12 grid-item">
+                        <div class="post">
+                            <div class="post-caption">
+                                <h4>The Italic Mountains</h4>
+                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
+                                <p>Then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!</p>
+                            </div>
+                            <div class="post-footer">
+                                <i class="icon icon-picture"></i>
+                                <span class="date">Oct.1,2016</span>
+                                <span class="pull-right">
+                                    <a href="#">
+                                        <i class="icon icon-comment"></i>109
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon icon-heart"></i>389
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 grid-item">
+                        <div class="post">
+                            <div class="post-caption">
+                                <h4>The Italic Mountains</h4>
+                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 grid-item">
+                        <div class="post">
+                            <img src="img/photo_2.jpg" alt="Glory" class="img-responsive">
+                            <div class="post-caption">
+                                <h4>Morning Glory</h4>
+                                <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of autumn which I enjoy with my whole heart.</p>
+                            </div>
+                            <div class="post-footer">
+                                <i class="icon icon-picture"></i>
+                                <span class="date">Oct.1,2016</span>
+                                <span class="pull-right">
+                                    <a href="#">
+                                        <i class="icon icon-comment"></i>109
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon icon-heart"></i>389
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 grid-item">
+                        <div class="post">
+                            <img src="img/photo_2.jpg" alt="Glory" class="img-responsive">
+                            <div class="post-caption">
+                                <h4>Morning Glory</h4>
+                                <p> (“The Detective Agency”) was a Swedish electronica and folk music trio from Gothenburg. The group consisted of Anders “Flanders” Molin (accordion, music box), Martin “MacGyver” Molin (glockenspiel, traktofon, toy piano, Theremin) and Jon Nils Emanuel Ekström drums, sound box, small bells.</p>
+                            </div>
+                            <div class="post-footer">
+                                <i class="icon icon-picture"></i>
+                                <span class="date">Oct.1,2016</span>
+                                <span class="pull-right">
+                                    <a href="#">
+                                        <i class="icon icon-comment"></i>109
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon icon-heart"></i>389
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12 grid-item">
+                        <div class="post">
+                            <div class="post-caption">
+                                <h4 class="title">Morning Glory</h4>
+                                <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
+                            </div>
+                            <div class="post-footer">
+                                <i class="icon icon-picture"></i>
+                                <span class="date">Oct.1,2016</span>
+                                <span class="pull-right">
+                                    <a href="#">
+                                        <i class="icon icon-comment"></i>109
+                                    </a>
+                                    <a href="#">
+                                        <i class="icon icon-heart"></i>389
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="copy-right text-center">
+        <span>© Copyright</span>
+        <span>那小爷</span>
+        <a href="mailto:nana0762@163.com"><span class="icon icon-envelope"></span>Email Me</a>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- 瀑布流样式 -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- 自定义样式 -->
+    <script src="js/main.js"></script>
+
+    <script>
+        $(function(){
+            //根据时间更换背景
+            var theDate = new Date();
+            flag = theDate.getHours();
+
+           if(flag >= 6 && flag <= 18){
+                $('body').css('background-image','url(img/bg1.jpg)');
+                $('.greet').html('Morning');
+           }else{
+                $('body').css('background-image','url(img/bg.jpg)');
+                $('.greet').html('Night');
+           }
+        })
+    </script>
+</body>
+</html>

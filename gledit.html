@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Writing ...</title>
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="ckeditor/ckeditor.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css">
+
+    <style>
+        body{
+            background: url(img/bg2.jpg) no-repeat center fixed;
+        }
+        .nav-top{position: relative;}
+        .wrapper{background-color: rgba(255,255,255,0.15);color: #FFF;margin-top: -20px;}
+        .content-wrapper{margin:5em auto;}
+        /*css3 动画效果*/
+        #top-text{
+            animation-duration: 2s;    /*动画持续时间*/
+            animation-delay: 1s;    /*动画延迟时间*/
+            animation-iteration-count: 1;    /*动画执行次数*/
+        }
+        
+        .dotting{display: inline-block;min-width: 2px;min-height: 2px;box-shadow: 2px 0 currentColor,6px 0 currentColor,10px 0 currentColor;margin-right: 8px;-webkit-animation: dot 4s infinite step-start both;animation: dot 4s infinite step-start both;}
+            @keyframes dot{
+                25%{box-shadow: none;}
+                50%{box-shadow: 2px 0 currentColor;}
+                75%{box-shadow: 2px 0 currentColor,6px 0 currentColor;}
+            }
+            @-webkit-keyframes dot{
+                25%{box-shadow: none;}
+                50%{box-shadow: 2px 0 currentColor;}
+                75%{box-shadow: 2px 0 currentColor,6px 0 currentColor;}
+            }
+    </style>
+</head>
+<body>
+    <!-- nav -->
+    <nav class="nav-top navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-brand logo">
+                    <h1><a href="blog.html">Borning</a></h1>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse navbar-right" id="navbar-menu">
+                <ul class="nav navbar-nav" role="navigation">
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#board">Board</a></li>
+                    <li><a href="#contart">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- jumbotron -->
+    <div class="jumbotron wrapper">
+        <div class="container">
+            <h1 class="animated bounce" id="top-text">A journey of a thousand miles begins with single step <i class="dotting"></i></h1>
+            <button class="btn btn-warning btn-lg" onclick="javascript:history.back(-1);"><i class="icon-quote-left"></i>Back<i class="icon-quote-right"></i></button>       
+        </div>
+    </div>
+    <a name="gledit"></a>
+    <!-- container -->
+    <div class="container content-wrapper">
+        <ul class="nav nav-tabs">
+            <li role="presention" class="active"><a href="#"><span class="glyphicon glyphicon-pencil"></span> Writie Something</a></li>
+        </ul>
+        <textarea name="editor" id="editor" cols="30" rows="10"></textarea>
+        <div class="btn-group pull-right">
+            <button class="btn btn-danger" type="reset">Reset</button>
+            <button class="btn btn-info" type="submit">Send</button>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="copy-right text-center">
+        <span>© Copyright</span>
+        <span>那小爷</span>
+        <a href="mailto:nana0762@163.com"><span class="icon icon-envelope"></span>Email Me</a>
+        <span>本网站内容创意皆为原创</span>
+    </footer>
+    
+    <script type="text/javascript">CKEDITOR.replace('editor');</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>
